@@ -2,7 +2,6 @@ spring:
   application:
     name: config-server
 
-
   cloud:
     config:
       server:
@@ -11,3 +10,6 @@ spring:
           username: ${GITHUB_USERNAME}
           password: ${GITHUB_TOCKEN}
 
+
+server:
+  port: ${PORT:8888}
